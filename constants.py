@@ -1,7 +1,7 @@
 # Grid and cell settings
-GRID_SIZE = 20 # number of cells per row and col #
-CELL_SIZE = 20 # in pixels
-BACKGROUND_COLOR = "BLACK"
+GRID_SIZE = 50 # number of cells per row and col #
+CELL_SIZE = 25 # in pixels
+BACKGROUND_COLOR = (120, 100, 100)
 GRID_LINE_COLOR = "WHITE"
 WIDTH = GRID_SIZE * CELL_SIZE
 HEIGHT = GRID_SIZE * CELL_SIZE
@@ -19,4 +19,11 @@ CELL_COLORS = [
 MAX_CELL_GEN = len(CELL_COLORS)
 
 # how much time should pass per tick
-TICK_DURATION = 2
+TICK_DURATION = 0.4 # 1 sec
+TICK_DURATIONS = [n/10 for n in range(1, 15)]
+
+
+# number of neigbors for different results
+LIVE_LIVE = [2, 3]
+LIVE_DEAD = [0, 1, 4, 5, 6, 7, 8]
+DEAD_LIVE = [3]

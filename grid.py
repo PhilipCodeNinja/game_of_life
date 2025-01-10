@@ -3,8 +3,7 @@ from constants import *
 from cell import *
 
 class Grid():
-    # grid should initialize itself with the right size and Cells
-    directions = []
+
 
     def __init__(self, grid_size):
         self.timer = 0
@@ -34,8 +33,21 @@ class Grid():
                 # cell.shout()
                 cell.update()
 
-    def game_update():
-        pass
+    
+    def grid_cell(self, y_coord, x_coord):
+        return self.grid[y_coord][x_coord]
+
+
+
+        # for each cell determine number of neighbors
+
+        # live 0, 1 neigbor - dies
+
+        # live 2, 3 neigbor - lives
+
+        # live 4, 5, 6, 7, 8 neighbors - dies
+
+        # dead 3 neigbors - lives
 
 
     # game logic
